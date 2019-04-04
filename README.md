@@ -1,4 +1,3 @@
-git status
 # url-short
 Technical task's project. Simple Web App that shorten user's Url
 
