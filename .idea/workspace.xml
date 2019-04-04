@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82c46fe8-599d-456c-aff3-3b1a2b9ffb7f" name="Default Changelist" comment="" />
+    <list default="true" id="82c46fe8-599d-456c-aff3-3b1a2b9ffb7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shortener/templates/shortener/shortcut_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/shortener/templates/shortener/shortcut_form.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,11 +15,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.6227273">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/short_url/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="131">
-                  <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+                <state relative-caret-position="236">
+                  <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -25,7 +28,7 @@
             <entry file="file://$PROJECT_DIR$/.env">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
-                  <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+                  <caret column="33" selection-start-column="33" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -87,11 +90,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/shortener/templates/shortener/shortcut_form.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="245">
-                  <caret line="79" column="81" selection-start-line="79" selection-start-column="81" selection-end-line="79" selection-end-column="81" />
+                  <caret line="79" column="81" lean-forward="true" selection-start-line="79" selection-start-column="81" selection-end-line="79" selection-end-column="81" />
                 </state>
               </provider>
             </entry>
@@ -145,6 +148,9 @@
       <replace>id</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -160,13 +166,13 @@
         <option value="$PROJECT_DIR$/shortener/models.py" />
         <option value="$PROJECT_DIR$/shortener/serializers.py" />
         <option value="$PROJECT_DIR$/shortener/views.py" />
-        <option value="$PROJECT_DIR$/shortener/templates/shortener/shortcut_form.html" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/short_url/settings.py" />
+        <option value="$PROJECT_DIR$/shortener/templates/shortener/shortcut_form.html" />
       </list>
     </option>
   </component>
@@ -176,6 +182,7 @@
     <option name="width" value="683" />
     <option name="height" value="741" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -188,6 +195,29 @@
             <path>
               <item name="short_url" type="b2602c69:ProjectViewProjectNode" />
               <item name="short_url" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="short_url" type="b2602c69:ProjectViewProjectNode" />
+              <item name="short_url" type="462c0819:PsiDirectoryNode" />
+              <item name="short_url" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="short_url" type="b2602c69:ProjectViewProjectNode" />
+              <item name="short_url" type="462c0819:PsiDirectoryNode" />
+              <item name="shortener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="short_url" type="b2602c69:ProjectViewProjectNode" />
+              <item name="short_url" type="462c0819:PsiDirectoryNode" />
+              <item name="shortener" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="short_url" type="b2602c69:ProjectViewProjectNode" />
+              <item name="short_url" type="462c0819:PsiDirectoryNode" />
+              <item name="shortener" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="shortener" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,12 +287,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554363242967</updated>
       <workItem from="1554363244680" duration="9886000" />
-      <workItem from="1554375955846" duration="14843000" />
+      <workItem from="1554375955846" duration="15294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24729000" />
+    <option name="totallyTimeSpent" value="25180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="741" extended-state="6" />
@@ -376,20 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shortener/templates/shortener/shortcut_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="79" column="81" selection-start-line="79" selection-start-column="81" selection-end-line="79" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shortener/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shortener/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -424,7 +440,7 @@
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -437,8 +453,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/short_url/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        <state relative-caret-position="236">
+          <caret line="42" column="26" lean-forward="true" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortener/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortener/templates/shortener/shortcut_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="79" column="81" lean-forward="true" selection-start-line="79" selection-start-column="81" selection-end-line="79" selection-end-column="81" />
         </state>
       </provider>
     </entry>
