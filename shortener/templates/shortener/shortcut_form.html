@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shortcutApp">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>Shortcut</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body ng-controller="shortcutController as vm">
+
+    <div class="container" style="margin-top: 40px;">
+        <div class="row">
+          <div class="col-sm-11 col-md-9 col-lg-7 mx-auto">
+            <div class="card card-signin my-5">
+              <div class="card-body" >
+                <h5 class="card-title text-center" style="font-weight: bold">SHORTCUT GENERATOR</h5>
+                <form class="form">
+                  <div class="form-label-group">
+                    <input type="url" id="inputURL" class="form-control" placeholder="YOUR URL" ng-Model="url_input" autocomplete="off" required>
+                    <label for="inputEmail">Copy your url here</label>
+                  </div>
+
+                  <div class="form-label-group">
+                    <input ng-Model="short" class="form-control">
+                    <label for="inputPassword">Your shortcut</label>
+                  </div>
+
+                  <button class="btn btn-lg btn-primary btn-block text-uppercase" ng-click="vm.post()" type="submit">Generate shortcut</button>
+                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    angular.module('shortcutApp', []);
+
+    (function () {
+    'use strict';
+
+    angular
+        .module('shortcutApp')
+        .controller('shortcutController', shortcutController);
+
+    shortcutController.$inject = ['$http', '$scope'];
+
+    function shortcutController($http, $scope) {
+        /*
+            Controller that sends requests and receive data from Django API
+            1. Send POST request -> create Shortcut
+            2. Send PUT request -> update short attribute
+            3. Set input's value to short attribute
+
+        */
+        let vm = this;
+
+        vm.init = init;
+        vm.post = post;
+        init();
+
+        function init() {
+            console.log('123!');
+        }
+
+        function post() {
+            let url = document.location.protocol +'//'+ document.location.hostname +':8000/shortcuts/';
+            let short = document.location.protocol +'//'+ document.location.hostname +':8000/';
+            let check = document.location.protocol + '//' +document.location.hostname +':8000/shortcuts/check_shorts/';
+            let parametr = JSON.stringify({
+                "url": $scope.url_input
+            });
+            let exist = false
+
+            // Check if shorten url already exist, if so it doesnt send post request
+            // it gets data from /shortcuts/check_shorts/ and sets it as a input.
+
+            $http.post(check, parametr, {headers: {'Content-Type': 'application/json'}}
+                ).then(function (response) {
+                    console.log(typeof response.data['url'])
+                    if (typeof response.data['url'] !== 'undefined'){
+                        $scope.short = response.data['short'];
+                        exist = true;
+                    }
+                    else{
+                        $http.post(url, parametr, {headers: {'Content-Type': 'application/json'}}
+                            ).then(function (response) {
+                                console.log(response.data['pk']);
+                                $http.put(url + response.data['pk'] + '/',
+                                    {
+                                        "short": short + response.data['pk']
+                                    }, {headers: {'Content-Type': 'application/json'}})
+                                    .then(function (response) {
+                                        $scope.short = response.data['short'];
+                                    });
+                            });
+                    }
+            });
+        }
+    }
+})();
+</script>
+</body>
+</html>
